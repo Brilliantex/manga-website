@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Links with Text Fields</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full viewport height */
+      background-color: #f0f0f0;
+    }
+
+    .link-container {
+      display: flex;
+      gap: 40px; /* Space between images */
+      align-items: center;
+    }
+
+    .link-container .image-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .link-container a img {
+      width: 300px; /* Set a size for images */
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .link-container a img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-field {
+      width: 300px;
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="link-container">
+    <div class="image-wrapper">
+      <a href="Page1.html" target="_blank">
+        <img src="manga pages/The baffler Vs Lord Omnideath/1.png" alt="Site 1">
+      </a>
+      <textarea class="text-field" placeholder="The epic battle between Lord Omnideath and The Baffler"></textarea>
+    </div>
+
+    <div class="image-wrapper">
+      <a href="page2.html" target="_blank">
+        <img src="manga pages/The baffler Vs Lord Omnideath/1.png" alt="Site 2">
+      </a>
+      <textarea class="text-field" placeholder=".."></textarea>
+    </div>
+  </div>
+
+</body>
+</html>
